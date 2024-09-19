@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F3F3;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #D3D3D3; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.logo {
+    width: 400px; 
+    margin-bottom: 10px; 
+}
+
+nav {
+    background-color: #F0F0F0; 
+    width: 100%; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.nav-home {
+    color: #45A58A; 
+}
+
+.nav-sobre {
+    color: #E4C05C; 
+}
+
+.nav-reservas {
+    color: #CD604C; 
+}
+
+.nav-regras {
+    color: #994555; 
+}
+
+.nav-contato {
+    color: #3D99B0; 
+}
+
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+main {
+    background-color: #4169E1;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.info-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+    text-align: left;
+}
+
+.info-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    background-color: #D3D3D3;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-placeholder p {
+    color: #333;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-section h1 {
+        font-size: 2em;
+    }
+
+    .info-section p {
+        font-size: 1em;
+    }
+      .calendar-section {
+        padding: 20px;
+    }
+    
+    #calendar {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
