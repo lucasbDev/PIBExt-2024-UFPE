@@ -44,6 +44,35 @@
                 </div>
             </div>
         </section>
+        <hr class="section-divider">
+        <section id="reservas" class="calendar-section">
+            <h2>Reservas</h2>
+            <div id="calendar"></div>
+        </section>
+        
+        </main>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var calendarEl = document.getElementById('calendar');
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    locale: 'pt-br',
+                    headerToolbar: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                    },
+                    buttonText: {
+                        today: 'Hoje',
+                        month: 'Mês',
+                        week: 'Semana',
+                        day: 'Dia'
+                    }
+                });
+                calendar.render();
+            });
+        </script>
     </main>
 </body>
 
